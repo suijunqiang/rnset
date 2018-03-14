@@ -1,0 +1,252 @@
+--------- beginning of /dev/log/system
+V/LightsService( 1296): setLight #2: color=#ff666666: onMS=#0: offMS=#0
+--------- beginning of /dev/log/main
+I/Timeline(27100): Timeline: Activity_launch_request id:com.skybureau time:524417685
+I/ActivityManager( 1296): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.skybureau/.MainActivity bnds=[128,434][239,564]} from pid 27100
+I/ActivityManager( 1296): Start proc com.skybureau for activity com.skybureau/.MainActivity: pid=8778 uid=10169 gids={50169, 3003, 1028, 1015, 1023}
+V/WindowManager( 1296): Changing focus from Window{41ff76e0 u0 com.oppo.launcher/com.oppo.launcher.Launcher} to null Callers=com.android.server.wm.WindowManagerService.handleAppTransitionReadyLocked:8834 com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner:9371 com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedLoop:8333 com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked:8275 
+D/ActivityThread( 8778): handleBindApplication:com.skybureau
+D/ActivityThread( 8778): setTargetHeapUtilization:0.75
+D/ActivityThread( 8778): setTargetHeapMinFree:4194304
+V/fb-UnpackingSoSource( 8778): locked dso store /data/data/com.skybureau/lib-main
+I/fb-UnpackingSoSource( 8778): dso store is up-to-date: /data/data/com.skybureau/lib-main
+V/fb-UnpackingSoSource( 8778): releasing dso store lock for /data/data/com.skybureau/lib-main
+I/dalvikvm( 8778): Could not find method android.app.Activity.requestPermissions, referenced from method com.facebook.react.ReactActivityDelegate.requestPermissions
+W/dalvikvm( 8778): VFY: unable to resolve virtual method 74: Landroid/app/Activity;.requestPermissions ([Ljava/lang/String;I)V
+D/dalvikvm( 8778): VFY: replacing opcode 0x6e at 0x0006
+D/ReactNative( 8778): ReactInstanceManager.ctor()
+D/ReactNative( 8778): ReactInstanceManager.createReactContextInBackground()
+D/ReactNative( 8778): ReactInstanceManager.recreateReactContextInBackgroundInner()
+D/ReactNative( 8778): ReactInstanceManager.recreateReactContextInBackgroundFromBundleLoader()
+D/ReactNative( 8778): ReactInstanceManager.recreateReactContextInBackground()
+D/ReactNative( 8778): ReactInstanceManager.runCreateReactContextOnNewThread()
+D/dalvikvm( 8778): Trying to load lib /data/app-lib/com.skybureau-2/libreactnativejni.so 0x41d728b0
+D/dalvikvm( 8778): Added shared lib /data/app-lib/com.skybureau-2/libreactnativejni.so 0x41d728b0
+D/dalvikvm( 8778): Trying to load lib /data/app-lib/com.skybureau-2/libfb.so 0x41d728b0
+D/dalvikvm( 8778): Added shared lib /data/app-lib/com.skybureau-2/libfb.so 0x41d728b0
+D/dalvikvm( 8778): Trying to load lib /data/app-lib/com.skybureau-2/libfb.so 0x41d728b0
+D/dalvikvm( 8778): Shared lib '/data/app-lib/com.skybureau-2/libfb.so' already loaded in same CL 0x41d728b0
+I/dalvikvm( 8778): threadid=11: recursive native library load attempt (/data/app-lib/com.skybureau-2/libfb.so)
+D/ReactNative( 8778): ReactInstanceManager.createReactContext()
+I/dalvikvm( 8778): Could not find method android.view.View.setElevation, referenced from method com.facebook.react.uimanager.BaseViewManager.setElevation
+W/dalvikvm( 8778): VFY: unable to resolve virtual method 15841: Landroid/view/View;.setElevation (F)V
+D/dalvikvm( 8778): VFY: replacing opcode 0x6e at 0x000a
+I/dalvikvm( 8778): Could not find method android.webkit.WebSettings.setMixedContentMode, referenced from method com.facebook.react.views.webview.ReactWebViewManager.setMixedContentMode
+W/dalvikvm( 8778): VFY: unable to resolve virtual method 16409: Landroid/webkit/WebSettings;.setMixedContentMode (I)V
+D/dalvikvm( 8778): VFY: replacing opcode 0x6e at 0x0015
+I/dalvikvm( 8778): Could not find method android.webkit.WebSettings.setMixedContentMode, referenced from method com.facebook.react.views.webview.ReactWebViewManager.setMixedContentMode
+W/dalvikvm( 8778): VFY: unable to resolve virtual method 16409: Landroid/webkit/WebSettings;.setMixedContentMode (I)V
+D/dalvikvm( 8778): VFY: replacing opcode 0x6e at 0x0026
+I/dalvikvm( 8778): Could not find method android.webkit.WebSettings.setMixedContentMode, referenced from method com.facebook.react.views.webview.ReactWebViewManager.setMixedContentMode
+W/dalvikvm( 8778): VFY: unable to resolve virtual method 16409: Landroid/webkit/WebSettings;.setMixedContentMode (I)V
+D/dalvikvm( 8778): VFY: replacing opcode 0x6e at 0x0037
+I/dalvikvm( 8778): Could not find method android.webkit.CookieManager.setAcceptThirdPartyCookies, referenced from method com.facebook.react.views.webview.ReactWebViewManager.setThirdPartyCookiesEnabled
+W/dalvikvm( 8778): VFY: unable to resolve virtual method 16391: Landroid/webkit/CookieManager;.setAcceptThirdPartyCookies (Landroid/webkit/WebView;Z)V
+D/dalvikvm( 8778): VFY: replacing opcode 0x6e at 0x000a
+V/WindowManager( 1296): Changing focus from null to Window{42001c70 u0 com.skybureau/com.skybureau.MainActivity} Callers=com.android.server.wm.WindowManagerService.relayoutWindow:3048 com.android.server.wm.Session.relayout:195 android.view.IWindowSession$Stub.onTransact:235 com.android.server.wm.Session.onTransact:125 
+I/dalvikvm( 8778): Could not find method com.facebook.react.views.view.ReactViewGroup.drawableHotspotChanged, referenced from method com.facebook.react.views.view.ReactViewManager.receiveCommand
+W/dalvikvm( 8778): VFY: unable to resolve virtual method 28408: Lcom/facebook/react/views/view/ReactViewGroup;.drawableHotspotChanged (FF)V
+D/dalvikvm( 8778): VFY: replacing opcode 0x6e at 0x002d
+I/Adreno-EGL( 8778): <qeglDrvAPI_eglInitialize:410>: EGL 1.4 QUALCOMM build:  ()
+I/Adreno-EGL( 8778): OpenGL ES Shader Compiler Version: E031.24.02.07
+I/Adreno-EGL( 8778): Build Date: 01/29/15 Thu
+I/Adreno-EGL( 8778): Local Branch: 
+I/Adreno-EGL( 8778): Remote Branch: 
+I/Adreno-EGL( 8778): Local Patches: 
+I/Adreno-EGL( 8778): Reconstruct Branch: 
+I/dalvikvm( 8778): Could not find method com.facebook.react.views.view.ReactViewGroup.setForeground, referenced from method com.facebook.react.views.view.ReactViewManager.setNativeForeground
+W/dalvikvm( 8778): VFY: unable to resolve virtual method 28455: Lcom/facebook/react/views/view/ReactViewGroup;.setForeground (Landroid/graphics/drawable/Drawable;)V
+D/dalvikvm( 8778): VFY: replacing opcode 0x6e at 0x0003
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.art.ARTGroupViewManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.art.ARTGroupShadowNode
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.art.ARTShapeViewManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.art.ARTShapeShadowNode
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.art.ARTTextViewManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.art.ARTTextShadowNode
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.checkbox.ReactCheckBoxManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.uimanager.LayoutShadowNode
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.picker.ReactDialogPickerManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.drawer.ReactDrawerLayoutManager
+D/OpenGLRenderer( 8778): Enabling debug mode 0
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.picker.ReactDropdownPickerManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollViewManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollContainerViewManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.progressbar.ReactProgressBarViewManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.progressbar.ProgressBarShadowNode
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.scroll.ReactScrollViewManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.slider.ReactSliderManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.slider.ReactSliderManager$ReactSliderShadowNode
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager$ReactSwitchShadowNode
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.toolbar.ReactToolbarManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.webview.ReactWebViewManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.swiperefresh.SwipeRefreshLayoutManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.art.ARTSurfaceViewManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.art.ARTSurfaceViewShadowNode
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageViewManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageShadowNode
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.image.ReactImageManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.modal.ReactModalHostManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.modal.ModalHostShadowNode
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.text.ReactRawTextManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.text.ReactRawTextShadowNode
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputManager
+I/ActivityManager( 1296): Displayed com.skybureau/.MainActivity: +327ms
+I/Timeline( 8778): Timeline: Activity_idle id: android.os.BinderProxy@41d6e380 time:524418031
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputShadowNode
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.text.ReactTextViewManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.text.ReactTextShadowNode
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.view.ReactViewManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.viewpager.ReactViewPagerManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextViewManager
+W/unknown:ViewManagerPropertyUpdater( 8778): Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextShadowNode
+E/cutils  (  210): Failed to mkdirat(/storage/sdcard1/Android): Read-only file system
+W/ContextImpl( 8778): Failed to ensure directory: /storage/sdcard1/Android/data/com.skybureau/cache
+D/VoldConnector( 1296): SND -> {115 volume mkdirs /storage/sdcard1/Android/data/com.skybureau/cache/}
+W/Vold    (  210): Returning OperationFailed - no handler for errno 30
+D/VoldConnector( 1296): RCV <- {400 115 volume operation failed (Read-only file system)}
+D/VoldConnector( 1296): RMV <- {400 115 volume operation failed (Read-only file system)}
+I/dalvikvm( 8778): Could not find method android.webkit.CookieManager.setCookie, referenced from method com.facebook.react.modules.network.ForwardingCookieHandler.addCookieAsync
+W/dalvikvm( 8778): VFY: unable to resolve virtual method 16393: Landroid/webkit/CookieManager;.setCookie (Ljava/lang/String;Ljava/lang/String;Landroid/webkit/ValueCallback;)V
+D/dalvikvm( 8778): VFY: replacing opcode 0x6e at 0x0005
+I/dalvikvm( 8778): Could not find method android.webkit.CookieManager.removeAllCookies, referenced from method com.facebook.react.modules.network.ForwardingCookieHandler.clearCookiesAsync
+W/dalvikvm( 8778): VFY: unable to resolve virtual method 16389: Landroid/webkit/CookieManager;.removeAllCookies (Landroid/webkit/ValueCallback;)V
+D/dalvikvm( 8778): VFY: replacing opcode 0x6e at 0x0009
+I/dalvikvm( 8778): Could not find method android.webkit.CookieManager.flush, referenced from method com.facebook.react.modules.network.ForwardingCookieHandler$CookieSaver.flush
+W/dalvikvm( 8778): VFY: unable to resolve virtual method 16385: Landroid/webkit/CookieManager;.flush ()V
+D/dalvikvm( 8778): VFY: replacing opcode 0x6e at 0x0006
+I/dalvikvm( 8778): Could not find method android.content.Context.checkSelfPermission, referenced from method com.facebook.react.modules.permissions.PermissionsModule.checkPermission
+W/dalvikvm( 8778): VFY: unable to resolve virtual method 387: Landroid/content/Context;.checkSelfPermission (Ljava/lang/String;)I
+D/dalvikvm( 8778): VFY: replacing opcode 0x6e at 0x0028
+I/dalvikvm( 8778): Could not find method android.content.Context.checkSelfPermission, referenced from method com.facebook.react.modules.permissions.PermissionsModule.requestMultiplePermissions
+W/dalvikvm( 8778): VFY: unable to resolve virtual method 387: Landroid/content/Context;.checkSelfPermission (Ljava/lang/String;)I
+D/dalvikvm( 8778): VFY: replacing opcode 0x6e at 0x003f
+I/dalvikvm( 8778): Could not find method android.content.Context.checkSelfPermission, referenced from method com.facebook.react.modules.permissions.PermissionsModule.requestPermission
+W/dalvikvm( 8778): VFY: unable to resolve virtual method 387: Landroid/content/Context;.checkSelfPermission (Ljava/lang/String;)I
+D/dalvikvm( 8778): VFY: replacing opcode 0x6e at 0x0028
+I/dalvikvm( 8778): Could not find method java.util.Locale.toLanguageTag, referenced from method com.learnium.RNDeviceInfo.RNDeviceModule.getCurrentLanguage
+W/dalvikvm( 8778): VFY: unable to resolve virtual method 35285: Ljava/util/Locale;.toLanguageTag ()Ljava/lang/String;
+D/dalvikvm( 8778): VFY: replacing opcode 0x6e at 0x0014
+D/ReactNative( 8778): Initializing React Xplat Bridge.
+D/ReactNative( 8778): Initializing React Xplat Bridge before initializeBridge
+D/ReactNative( 8778): Initializing React Xplat Bridge after initializeBridge
+D/ReactNative( 8778): CatalystInstanceImpl.runJSBundle()
+D/ReactNative( 8778): ReactInstanceManager.setupReactContext()
+D/ReactNative( 8778): CatalystInstanceImpl.initialize()
+D/ReactNative( 8778): ReactInstanceManager.attachRootViewToInstance()
+D/dalvikvm( 8778): Trying to load lib /data/app-lib/com.skybureau-2/libyoga.so 0x41d728b0
+D/dalvikvm( 8778): Added shared lib /data/app-lib/com.skybureau-2/libyoga.so 0x41d728b0
+I/dalvikvm( 8778): Could not find method android.widget.ImageView.<init>, referenced from method com.facebook.drawee.view.DraweeView.<init>
+W/dalvikvm( 8778): VFY: unable to resolve direct method 16653: Landroid/widget/ImageView;.<init> (Landroid/content/Context;Landroid/util/AttributeSet;II)V
+D/dalvikvm( 8778): VFY: replacing opcode 0x70 at 0x0000
+I/dalvikvm( 8778): Could not find method com.facebook.drawee.view.DraweeView.getImageTintList, referenced from method com.facebook.drawee.view.DraweeView.init
+W/dalvikvm( 8778): VFY: unable to resolve virtual method 19212: Lcom/facebook/drawee/view/DraweeView;.getImageTintList ()Landroid/content/res/ColorStateList;
+D/dalvikvm( 8778): VFY: replacing opcode 0x6e at 0x0015
+I/Timeline( 1296): Timeline: Activity_windows_visible id: ActivityRecord{41dab708 u0 com.skybureau/.MainActivity t112} time:524418257
+V/AlarmManager( 1296): Checking for alarms... rtc=1518191357735, elapsed=1004636535
+V/AlarmManager( 1296): findRtcWakeupBatchLocked false
+V/AlarmManager( 1296): sending alarm Alarm{425c1020 type 0 com.system.print.ppl.service}
+E/CheckPermission( 8778): _bluetooth code = 1 
+E/CheckPermission( 8778): _bluetooth code = 14 
+W/System.err( 8778): java.lang.SecurityException: Need BLUETOOTH permission: Neither user 10169 nor current process has android.permission.BLUETOOTH.
+W/System.err( 8778): 	at android.os.Parcel.readException(Parcel.java:1465)
+W/System.err( 8778): 	at android.os.Parcel.readException(Parcel.java:1419)
+W/System.err( 8778): 	at android.bluetooth.IBluetoothManager$Stub$Proxy.getName(IBluetoothManager.java:418)
+W/System.err( 8778): 	at android.bluetooth.BluetoothAdapter.getName(BluetoothAdapter.java:762)
+W/System.err( 8778): 	at com.learnium.RNDeviceInfo.RNDeviceModule.getConstants(RNDeviceModule.java:106)
+W/System.err( 8778): 	at com.facebook.react.bridge.JavaModuleWrapper.getConstants(JavaModuleWrapper.java:140)
+W/System.err( 8778): 	at com.facebook.react.bridge.queue.NativeRunnable.run(Native Method)
+W/System.err( 8778): 	at android.os.Handler.handleCallback(Handler.java:733)
+W/System.err( 8778): 	at android.os.Handler.dispatchMessage(Handler.java:95)
+W/System.err( 8778): 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java:31)
+W/System.err( 8778): 	at android.os.Looper.loop(Looper.java:136)
+W/System.err( 8778): 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$3.run(MessageQueueThreadImpl.java:194)
+W/System.err( 8778): 	at java.lang.Thread.run(Thread.java:841)
+I/dalvikvm( 8778): Could not find method android.content.Context.getNoBackupFilesDir, referenced from method com.google.android.gms.common.util.zzv.getNoBackupFilesDir
+W/dalvikvm( 8778): VFY: unable to resolve virtual method 408: Landroid/content/Context;.getNoBackupFilesDir ()Ljava/io/File;
+D/dalvikvm( 8778): VFY: replacing opcode 0x6e at 0x0006
+E/ReactNativeJS( 8778): undefined is not an object (evaluating 'n.View.propTypes.style')
+I/ReactNativeJS( 8778): Running application "SkyBureau" with appParams: {"rootTag":1}. __DEV__ === false, development-level warning are OFF, performance optimizations are ON
+E/ReactNativeJS( 8778): Application SkyBureau has not been registered.
+E/ReactNativeJS( 8778): 
+E/ReactNativeJS( 8778): Hint: This error often happens when you're running the packager (local dev server) from a wrong folder. For example you have multiple apps and the packager is still running for the app you were working on before.
+E/ReactNativeJS( 8778): If this is the case, simply kill the old packager instance (e.g. close the packager terminal window) and start the packager in the correct app folder (e.g. cd into app folder and run 'npm start').
+E/ReactNativeJS( 8778): 
+E/ReactNativeJS( 8778): This error can also happen due to a require() error during initialization or failure to call AppRegistry.registerComponent.
+E/ReactNativeJS( 8778): 
+W/dalvikvm( 8778): threadid=16: thread exiting with uncaught exception (group=0x415ced58)
+E/AndroidRuntime( 8778): FATAL EXCEPTION: mqt_native_modules
+E/AndroidRuntime( 8778): Process: com.skybureau, PID: 8778
+E/AndroidRuntime( 8778): com.facebook.react.common.JavascriptException: undefined is not an object (evaluating 'n.View.propTypes.style'), stack:
+E/AndroidRuntime( 8778): <unknown>@510:1225
+E/AndroidRuntime( 8778): d@2:768
+E/AndroidRuntime( 8778): n@2:409
+E/AndroidRuntime( 8778): t@2:262
+E/AndroidRuntime( 8778): <unknown>@509:241
+E/AndroidRuntime( 8778): d@2:768
+E/AndroidRuntime( 8778): n@2:409
+E/AndroidRuntime( 8778): t@2:262
+E/AndroidRuntime( 8778): <unknown>@508:291
+E/AndroidRuntime( 8778): d@2:768
+E/AndroidRuntime( 8778): n@2:409
+E/AndroidRuntime( 8778): t@2:262
+E/AndroidRuntime( 8778): <unknown>@507:341
+E/AndroidRuntime( 8778): d@2:768
+E/AndroidRuntime( 8778): n@2:409
+E/AndroidRuntime( 8778): t@2:262
+E/AndroidRuntime( 8778): <unknown>@499:501
+E/AndroidRuntime( 8778): d@2:768
+E/AndroidRuntime( 8778): n@2:409
+E/AndroidRuntime( 8778): t@2:262
+E/AndroidRuntime( 8778): <unknown>@430:200
+E/AndroidRuntime( 8778): d@2:768
+E/AndroidRuntime( 8778): n@2:409
+E/AndroidRuntime( 8778): t@2:262
+E/AndroidRuntime( 8778): <unknown>@303:241
+E/AndroidRuntime( 8778): d@2:768
+E/AndroidRuntime( 8778): n@2:409
+E/AndroidRuntime( 8778): t@2:262
+E/AndroidRuntime( 8778): <unknown>@12:42
+E/AndroidRuntime( 8778): d@2:768
+E/AndroidRuntime( 8778): n@2:339
+E/AndroidRuntime( 8778): t@2:262
+E/AndroidRuntime( 8778): global code@553:8
+E/AndroidRuntime( 8778): 
+E/AndroidRuntime( 8778): 	at com.facebook.react.modules.core.ExceptionsManagerModule.showOrThrowError(ExceptionsManagerModule.java:56)
+E/AndroidRuntime( 8778): 	at com.facebook.react.modules.core.ExceptionsManagerModule.reportFatalException(ExceptionsManagerModule.java:40)
+E/AndroidRuntime( 8778): 	at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 8778): 	at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime( 8778): 	at com.facebook.react.bridge.JavaMethodWrapper.invoke(JavaMethodWrapper.java:374)
+E/AndroidRuntime( 8778): 	at com.facebook.react.bridge.JavaModuleWrapper.invoke(JavaModuleWrapper.java:162)
+E/AndroidRuntime( 8778): 	at com.facebook.react.bridge.queue.NativeRunnable.run(Native Method)
+E/AndroidRuntime( 8778): 	at android.os.Handler.handleCallback(Handler.java:733)
+E/AndroidRuntime( 8778): 	at android.os.Handler.dispatchMessage(Handler.java:95)
+E/AndroidRuntime( 8778): 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java:31)
+E/AndroidRuntime( 8778): 	at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime( 8778): 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$3.run(MessageQueueThreadImpl.java:194)
+E/AndroidRuntime( 8778): 	at java.lang.Thread.run(Thread.java:841)
+D/ActivityManager( 1296): addErrorToDropBox processName = com.skybureau
+W/ActivityManager( 1296):   Force finishing activity com.skybureau/.MainActivity
+V/WindowManager( 1296): Changing focus from Window{42001c70 u0 com.skybureau/com.skybureau.MainActivity} to null Callers=com.android.server.wm.WindowManagerService.setFocusedApp:3904 com.android.server.am.ActivityManagerService.setFocusedActivityLocked:2356 com.android.server.am.ActivityStack.adjustFocusedActivityLocked:2559 com.android.server.am.ActivityStack.finishActivityLocked:2768 
+D/dalvikvm( 1296): GC_FOR_ALLOC freed 956K, 34% free 20891K/31576K, paused 76ms, total 78ms
+D/dalvikvm( 1296): GC_FOR_ALLOC freed 481K, 35% free 20834K/31576K, paused 73ms, total 73ms
+E/OppoPhoneWindow( 1296): OppoPhoneWindow
+D/DropBoxManagerService( 1296): file :: /data/system/dropbox/data_app_crash@1518191358353.txt
+V/WindowManager( 1296): Changing focus from null to Window{42042fa8 u0 Application Error: com.skybureau} Callers=com.android.server.wm.WindowManagerService.addWindow:2388 com.android.server.wm.Session.addToDisplay:167 android.view.ViewRootImpl.setView:504 android.view.WindowManagerGlobal.addView:259 
+D/ActivityManager( 1296): resumeTopActivityLocked:check resume home when prev:ActivityRecord{41dab708 u0 com.skybureau/.MainActivity t112 f}, topActivityRecord:ActivityRecord{41e82fe0 u0 com.oppo.launcher/.Launcher t1}
+D/ActivityManager( 1296): resumeTopActivityLocked:the next task is in top, it will be resume soon, so pass through...
+D/ActivityManager( 1296): resumeTopActivityLocked: Going to sleep, and resume home from other stack, try resume one time.
+I/Timeline(27100): Timeline: Activity_idle id: android.os.BinderProxy@41dd06d0 time:524419462
+I/Timeline( 1296): Timeline: Activity_windows_visible id: ActivityRecord{41e82fe0 u0 com.oppo.launcher/.Launcher t1} time:524419945
+D/ReactNative( 8778): ReactInstanceManager.detachViewFromInstance()
+V/LightsService( 1296): setLight #2: color=#0: onMS=#0: offMS=#0
+V/LightsService( 1296): setLight #2: color=#ff666666: onMS=#0: offMS=#0
+W/Process ( 8778): killProcess [8778]
+W/System.err( 8778): java.lang.Throwable
+V/WindowManager( 1296): Changing focus from Window{42042fa8 u0 Application Error: com.skybureau EXITING} to Window{41ff76e0 u0 com.oppo.launcher/com.oppo.launcher.Launcher} Callers=com.android.server.wm.WindowManagerService.removeWindowLocked:2498 com.android.server.wm.WindowManagerService.removeWindowLocked:2437 com.android.server.wm.WindowManagerService.removeWindow:2432 com.android.server.wm.Session.remove:186 
+W/System.err( 8778): 	at android.os.Process.killProcess(Process.java:972)
+W/System.err( 8778): 	at com.android.internal.os.RuntimeInit$UncaughtHandler.uncaughtException(RuntimeInit.java:94)
+W/System.err( 8778): 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:693)
+W/System.err( 8778): 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690)
+I/Process ( 8778): Sending signal. PID: 8778 SIG: 9
+I/ActivityManager( 1296): Process com.skybureau (pid 8778) has died.
