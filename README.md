@@ -2,7 +2,7 @@
 A demonstrate project of react native and integrated &amp; verified opened react native components.
 
 # Demo Android APK
-[APK](http://www.percent.cn/dl/TJ.apk]
+[APK](http://www.percent.cn/dl/TJ.apk)
 # How to use
 0, It's based on the react3.5+.<br>
 1, I have verified it may run well on both of IOS/Android by XCode+WebStorm.<br>
