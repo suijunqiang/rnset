@@ -20,12 +20,12 @@ import My        from './My';
 import Example    from './rn_example/Example';
 import UserView  from './Component/User/User';
 import UserCache        from './Core/Cache/UserCache';
-
-
+import {NavigationPage, TeaNavigator} from 'teaset';
+import MessageList from './Component/User/Message/MessageList'
 const home_url   = 'http://www.percent.cn/epw/index1.php';
 const home_title = '上海天局';
 
-export default class percent_sjq extends Component {
+export default class percent_sjq extends NavigationPage {
   constructor(props){
     super(props);
 
@@ -97,7 +97,7 @@ export default class percent_sjq extends Component {
                 renderIcon={() => <Image style={styles.icon} source={require("./images/tab_demos.png")} />}
                 renderSelectedIcon={() => <Image style={styles.icon} source={require("./images/tab_demos_checked.png")} />}
                 //onPress={() =>this.setHome(home_url,home_title)}>
-                onPress={() =>this.setState({ selectedTab: '功能' })}>
+                onPress={() =>this.navigator.push({view: <MessageList/>})}>
               <Example {...this.props}/>
             </TabNavigator.Item>
             <TabNavigator.Item
