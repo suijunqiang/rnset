@@ -1,25 +1,7 @@
-import { AppRegistry } from 'react-native';
-import React, { Component } from 'react';
-import ManinScreen from './MainScreen';
-import {NavigationPage, TeaNavigator} from 'teaset';
-export  class index extends Component {
-    constructor(props){
-        super(props);
+/** @format */
 
-        this.state={
-            selectedTab:'首页',
-        }
+import {AppRegistry}     from 'react-native';
+import App               from './App';
+import {name as appName} from './app.json';
 
-    }
-
-    componentDidMount(){
-    }
-
-    render() {
-        return (
-            <TeaNavigator rootView={<ManinScreen/>} />
-        );
-    }
-}
-
-AppRegistry.registerComponent('SkyBureau', () => index);
+AppRegistry.registerComponent(appName, () => App);

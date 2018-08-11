@@ -1,5 +1,5 @@
 {
-  "name": "SkyBureau",
+  "name": "rnset",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -9,8 +9,8 @@
   "dependencies": {
     "crypto-js": "^3.1.9-1",
     "prop-types": "^15.6.0",
-    "react": "16.2.0",
-    "react-native": "0.52.2",
+    "react": "16.4.1",
+    "react-native": "0.56.0",
     "react-native-device-info": "^0.10.1",
     "react-native-dismiss-keyboard": "^1.0.0",
     "react-native-ezswiper": "^1.2.2",
@@ -20,10 +20,10 @@
     "teaset": "^0.5.5"
   },
   "devDependencies": {
-    "babel-jest": "22.1.0",
-    "babel-preset-react-native": "4.0.0",
-    "jest": "22.1.4",
-    "react-test-renderer": "16.2.0"
+    "babel-jest": "23.4.2",
+    "babel-preset-react-native": "5.0.2",
+    "jest": "23.5.0",
+    "react-test-renderer": "16.4.1"
   },
   "jest": {
     "preset": "react-native"
