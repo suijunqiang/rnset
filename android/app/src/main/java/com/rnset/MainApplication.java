@@ -1,4 +1,4 @@
-package com.skybureau;
+package com.rnset;
 
 import android.app.Application;
 

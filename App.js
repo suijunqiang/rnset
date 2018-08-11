@@ -12,8 +12,9 @@ import {TeaNavigator}     from 'teaset';
 
 export default class App extends Component{
   render() {
-      return (
+    return (
           <TeaNavigator rootView={<MainScreen/>} />
-      );
+    );
   }
 }
+
