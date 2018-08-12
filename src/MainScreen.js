@@ -13,17 +13,14 @@ import {
   Image,
   BackAndroid
 } from 'react-native';
-import TabNavigator from 'react-native-tab-navigator';
-
-import TJPage    from './components/common/TJPage';
-import My        from './My';
-import Example    from './rn_example/Example';
-import ExampleList    from './rn_example/ExampleList';
+import TabNavigator     from 'react-native-tab-navigator';
+import TJPage           from './components/common/TJPage';
+import My               from './My';
+import Example          from './rn_example/Example';
+import ExampleList      from './rn_example/ExampleList';
 import UserCache        from './core/cache/UserCache';
+import MessageList      from './components/user/message/MessageList'
 import {NavigationPage, TeaNavigator} from 'teaset';
-import MessageList from './components/user/message/MessageList'
-const home_url   = 'http://www.percent.cn/epw/index1.php';
-const home_title = '上海天局';
 
 export default class rnset extends NavigationPage {
   constructor(props){

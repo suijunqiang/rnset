@@ -11,7 +11,7 @@
     "prop-types": "^15.6.0",
     "react": "16.4.1",
     "react-native": "0.56.0",
-    "react-native-device-info": "^0.10.1",
+    "react-native-device-info": "^0.22.3",
     "react-native-dismiss-keyboard": "^1.0.0",
     "react-native-ezswiper": "^1.2.2",
     "react-native-scrollable-tab-view": "^0.8.0",
