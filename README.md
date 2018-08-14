@@ -1,8 +1,11 @@
 # rnset
-A demonstrate project of react native and integrated &amp; verified opened react native components.
+rnset integrates a lot good react native projects with the framework, which has a powerful/flexible/... .<br>
+All demo is derived from based class(es), the derived class inherited all features form it's based class(es) such as network/UI/exceptions/... .<br>
+Generally rnset able to streamline your new project work 50% and more reliable/faster/easier/... .<br>
+Enjoy it!<br>
 
 # Demo Android APK
-[APK](http://www.percent.cn/dl/TJ.apk)
+[APK](http://www.wwmj.club:81/download/TJ.apk)
 # How to use
 0, It's based on the react3.5+.<br>
 1, I have verified it may run well on both of IOS/Android by XCode+WebStorm.<br>
