@@ -7,6 +7,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "antd-mobile-rn": "^2.2.1",
     "crypto-js": "^3.1.9-1",
     "prop-types": "^15.6.0",
     "react": "16.4.1",
@@ -17,10 +18,12 @@
     "react-native-scrollable-tab-view": "^0.8.0",
     "react-native-storage": "^0.2.2",
     "react-native-tab-navigator": "^0.3.4",
+    "react-navigation": "^2.11.2",
     "teaset": "^0.5.5"
   },
   "devDependencies": {
     "babel-jest": "23.4.2",
+    "babel-plugin-import": "^1.8.0",
     "babel-preset-react-native": "5.0.2",
     "jest": "23.5.0",
     "react-test-renderer": "16.4.1"

@@ -33,18 +33,21 @@ import PopoverPickerExample from './PopoverPickerExample';
 import MenuExample from './MenuExample';
 import DrawerExample from './DrawerExample';
 import ModalIndicatorExample from './ModalIndicatorExample';
+import BasePage              from '../../../../components/common/BasePage';
 
-export default class Home extends NavigationPage {
+export default class Home extends BasePage {
 
-  static defaultProps = {
-    ...NavigationPage.defaultProps,
-    title: 'Teaset Example',
-  };
-
-  renderPage() {
+    renderNavigationBar() {
+        return (
+            <NavigationBar
+                title={"Teaset Example"}
+                leftView={ <NavigationBar.BackButton  onPress={() => this.navigator.pop()} />}
+            />
+        );
+    }
+        renderPage() {
     return (
       <ScrollView style={{flex: 1}}>
-        <View style={{height: 20}} />
         <ListRow title='Theme' detail='主题' onPress={() => this.navigator.push({view: <ThemeExample />})} topSeparator='full' />
         <ListRow title='Label' detail='标签' onPress={() => this.navigator.push({view: <LabelExample />})} />
         <ListRow title='Button' detail='按钮' onPress={() => this.navigator.push({view: <ButtonExample />})} />

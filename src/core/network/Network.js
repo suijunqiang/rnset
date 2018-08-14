@@ -8,6 +8,7 @@ import UserCache from '../cache/UserCache';
 var DeviceInfo = require('react-native-device-info');
 import Config from './Config'
 
+var RNDeviceInfo = require('react-native').NativeModules.RNDeviceInfo
 export default class Network {
 
     static request(baseUrl,UrlParam,successCallback,failCallback){
@@ -43,14 +44,26 @@ export default class Network {
             * if not follow actions will be failed.
             * %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
              */
-            appVersion:DeviceInfo.getVersion(),
-            buildVersion:DeviceInfo.getBuildNumber(),
+            // appVersion:DeviceInfo.getVersion(),
+            // buildVersion:DeviceInfo.getBuildNumber(),
+            // networkStatus:'',
+            // adfa:DeviceInfo.getUniqueID(),
+            // channel:(Platform.OS==='ios'?Config().channelIdIOS:Config().channelIdAndroid),
+            // mobelName:DeviceInfo.getDeviceId(),
+            // osVersion:DeviceInfo.getSystemVersion(),
+            // reOsVersion:DeviceInfo.getUserAgent(),
+            //
+            appVersion:RNDeviceInfo.appVersion,
+            buildVersion:RNDeviceInfo.buildNumber,
             networkStatus:'',
-            uuid:DeviceInfo.getUniqueID(),
+            adfa:RNDeviceInfo.uniqueId,
             channel:(Platform.OS==='ios'?Config().channelIdIOS:Config().channelIdAndroid),
-            mobelName:DeviceInfo.getDeviceId(),
-            osVersion:DeviceInfo.getSystemVersion(),
-            reOsVersion:DeviceInfo.getUserAgent(),
+            mobelName:RNDeviceInfo.deviceId,
+            osVersion:RNDeviceInfo.systemVersion,
+            reOsVersion:RNDeviceInfo.userAgent,
+
+
+
         }
         let xhr = new XMLHttpRequest();
 

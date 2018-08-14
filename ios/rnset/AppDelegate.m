@@ -9,6 +9,7 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+//#import "RCTBaiduMapViewManager.h"
 
 #define SDEBUG
 @implementation AppDelegate
@@ -22,6 +23,8 @@
   #else
   //Release
   jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"jsbundle"];
+  //jsCodeLocation = [NSURL URLWithString:[[NSBundle mainBundle] pathForResource:@"index.jsbundle" ofType:nil]];
+
   #endif
   
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
@@ -35,6 +38,8 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  
+  //[RCTBaiduMapViewManager initSDK:@"dbvZGRT6LLeBLMQKfW84BHqhPCyctsHP"];
   return YES;
 }
 

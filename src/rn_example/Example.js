@@ -10,7 +10,8 @@ import {NavigationPage,TeaNavigator} from 'teaset';
 export default class Example extends NavigationPage {
     render() {
         return(
-            <TeaNavigator rootView={<ExampleList/>} />
+            <ExampleList {...this.props}/>
+            //<TeaNavigator rootView={<ExampleList/>} />
         )
     }
 }

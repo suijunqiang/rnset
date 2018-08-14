@@ -16,7 +16,7 @@ import {
 import TabNavigator     from 'react-native-tab-navigator';
 import TJPage           from './components/common/TJPage';
 import My               from './My';
-import Example          from './rn_example/Example';
+import Example          from './rn_example/index';
 import ExampleList      from './rn_example/ExampleList';
 import UserCache        from './core/cache/UserCache';
 import MessageList      from './components/user/message/MessageList'
@@ -94,7 +94,8 @@ export default class rnset extends NavigationPage {
                 renderIcon={() => <Image style={styles.icon} source={require("./images/tab_demos.png")} />}
                 renderSelectedIcon={() => <Image style={styles.icon} source={require("./images/tab_demos_checked.png")} />}
                 //onPress={() =>this.setHome(home_url,home_title)}>
-                onPress={() =>this.navigator.push({view: <ExampleList/>})}>
+               // {/*onPress={() =>this.navigator.push({view: <ExampleList/>})}>*/}
+                onPress={() => this.setState({ selectedTab: '功能' })}>
               <Example {...this.props}/>
             </TabNavigator.Item>
             <TabNavigator.Item

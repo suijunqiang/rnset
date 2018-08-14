@@ -14,7 +14,7 @@ import {
 } from 'react-native';
 
 import {Theme, NavigationPage, NavigationBar,ListRow,TeaNavigator} from 'teaset';
-import BasePage from '../../components/common/BasePage';
+import BasePage from '../../../components/common/BasePage';
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',

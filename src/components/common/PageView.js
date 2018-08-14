@@ -20,8 +20,8 @@ import PropTypes from 'prop-types';
 
 
 let ins_top = Platform.select({
-    ios: 60,
-    android: 40,
+    ios: 0,
+    android: 0,
 });
 export default class PageView extends Component {
 

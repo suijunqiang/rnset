@@ -4,17 +4,26 @@
 
 
 import React, {Component} from 'react';
-import {Platform, View, ScrollView, Switch} from 'react-native';
-
+import {Platform, View, ScrollView, Switch,Dimensions} from 'react-native';
+import PropTypes from 'prop-types';
 import dismissKeyboard from 'react-native-dismiss-keyboard';
-import {Theme, NavigationPage, ListRow, NavigationBar, Label} from 'teaset';
+import {Theme, NavigationPage, ListRow, NavigationBar, Label,TeaNavigator,KeyboardSpace} from 'teaset';
 export default class BasePage extends NavigationPage {
 
     requestList = new Array();
+
+    static propTypes = {
+        ...BasePage.propTypes,
+        title: PropTypes.string,
+        showBackButton: PropTypes.bool,
+        navigationBarInsets: PropTypes.bool,
+    }; 
     static defaultProps = {
-        ...NavigationPage.defaultProps,
-        title: 'NavigationBar',
-        navigationBarInsets: false,
+        ...BasePage.defaultProps,
+        scene: TeaNavigator.SceneConfigs.PushFromRight,
+        title: null,
+        showBackButton: false,
+        navigationBarInsets: true,
     };
 
     constructor(props) {
@@ -23,6 +32,7 @@ export default class BasePage extends NavigationPage {
         //disable the yellow warning or not when run our application on devices/simulator.
         console.disableYellowBox = true;
 
+        this.screenWidth = Dimensions.get('window').width;
         Object.assign(this.state, {
             type: 'iOS',
             title: 'String',
@@ -43,7 +53,26 @@ export default class BasePage extends NavigationPage {
         });
 
     }
+    buildProps() {
+        let {navigationBarInsets, ...others} = super.buildProps();
+        let {left: paddingLeft, right: paddingRight} = Theme.screenInset;
+        let pageContainerStyle = [{
+            flex: 1,
+            paddingLeft,
+            paddingRight,
+            marginTop: navigationBarInsets ? (Theme.navBarContentHeight + Theme.statusBarHeight) : 0,
+        }];
+        return ({navigationBarInsets, pageContainerStyle, ...others});
+    }
 
+    onLayout(e) {
+        let {width} = Dimensions.get('window');
+        if (width != this.screenWidth) {
+            this.screenWidth = width;
+            this.forceUpdate();
+        }
+        this.props.onLayout && this.props.onLayout(e);
+    }
     backToHome(){
         this.props.navigator.popToTop();
     }
@@ -223,8 +252,22 @@ export default class BasePage extends NavigationPage {
     }
 
     renderPage() {
+        return null;
 
     }
-
+    render() {
+        let {autoKeyboardInsets, keyboardTopInsets, pageContainerStyle, onLayout, ...others} = this.buildProps();
+        return (
+            <View onLayout={e => this.onLayout(e)} {...others}>
+                <View style={{flex: 1}} >
+                    <View style={pageContainerStyle}>
+                        {this.renderPage()}
+                    </View>
+                    {this.renderNavigationBar()}
+                </View>
+                {autoKeyboardInsets ? <KeyboardSpace topInsets={keyboardTopInsets} /> : null}
+            </View>
+        );
+    }
 
 }

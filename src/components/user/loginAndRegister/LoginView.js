@@ -34,6 +34,7 @@ var TextInputHeight = 44;
 var paddding = 8;
 var MD5 = require("crypto-js/md5");
 
+var RNDeviceInfo = require('react-native').NativeModules.RNDeviceInfo;
 export default class LoginView extends BasePage {
 
     constructor (props) {
@@ -42,7 +43,9 @@ export default class LoginView extends BasePage {
         this.state = {
             userName:null,
             passwd:null,
-            uuid:DeviceInfo.getDeviceId(),
+            uuid:RNDeviceInfo.deviceId,
+            //uuid:DeviceInfo.getDeviceId(),
+            //uuid:'',
         }
     }
 

@@ -14,8 +14,8 @@ import {
 } from 'react-native';
 
 import {Theme, NavigationPage, ListRow, NavigationBar, Label} from 'teaset';
-import Teatest from './teaSet/TeaTest';
-import TeaSet  from './teaSet/TeaSetExa';
+import Teatest from './framework/teaSet/TeaTest';
+import TeaSet  from './framework/teaSet/TeaSetExa';
 import MessageList from '../components/user/message/MessageList';
 import EZSwiper from './at/ezswiper';
 import BasePage from '../components/common/BasePage';
@@ -34,6 +34,7 @@ export default class ExampleList extends NavigationPage {
     return (
         <NavigationBar
             title={"Example"}
+            leftView={ <NavigationBar.BackButton  onPress={() => this.navigator.pop()} />}
         />
     );
   }
@@ -41,6 +42,7 @@ export default class ExampleList extends NavigationPage {
 
     return (
         <ScrollView style={{flex: 1}}>
+          
           <ListRow title='TeaSet' detail='TeaSetUI' onPress={() => this.navigator.push({view: <TeaSet />})} topSeparator='full' />
           <ListRow title='MessageList' detail='消息列表' onPress={() => this.navigator.push({view: <MessageList />})}  />
           <ListRow title='EZSwiper' detail='EZSwiper' onPress={() => this.navigator.push({view: <EZSwiper/>})}  />
