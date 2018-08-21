@@ -7,23 +7,18 @@ import React,{
 
 import {
     View,
-    StyleSheet,
-    ListView,
-    Text,
-    Navigator,
     InteractionManager,
-    ScrollView, Switch
+    ScrollView, 
 } from 'react-native';
-import BListView from '../../common/BListView';
-import BasePage from '../../common/BasePage';
-import PageView from '../../common/PageView';
-import MessageCell from './MessageCell';
-import NetController from '../../../core/network/NetController';
-import Url from '../../../core/network/Url';
-import KindlyReminder from './../KindlyReminder';
+import BListView       from '../../common/BListView';
+import BasePage        from '../../common/BasePage';
+import PageView        from '../../common/PageView';
+import MessageCell     from './MessageCell';
+import NetController   from '../../../core/network/NetController';
+import Url             from '../../../core/network/Url';
+import KindlyReminder  from './../KindlyReminder';
 
-
-import {Theme, NavigationPage, ListRow, NavigationBar, Label} from 'teaset';
+import {NavigationBar } from 'teaset';
 
 export default class MessageList extends BasePage {
     constructor (props) {
@@ -52,9 +47,6 @@ export default class MessageList extends BasePage {
 
                 });
         });
-
-
-
     }
 
     toNew(images,index){
@@ -72,14 +64,10 @@ export default class MessageList extends BasePage {
             //             }
             //         }.bind(this),function (code,message) {
             //
-            //     });
-
-
-
+            //     }); 
         }else {
             //this.push(RoutingLog);
-        }
-
+        } 
     }
     renderRow(rowData,sectionID,rowID){
         return (<MessageCell {...rowData} cellClickFunc={this.cellClickFunc.bind(this,rowID)}/>);
@@ -87,8 +75,7 @@ export default class MessageList extends BasePage {
     renderHeader(){
         return (<View style={{height:0,backgroundColor:'rgba(0,0,0,0)'}}></View>)
     }
-    renderPage () {
-
+    renderPage () { 
         return (
             <PageView fromPage={this} {...this.state}>
             <ScrollView style={{flex: 1}}>
@@ -113,11 +100,3 @@ export default class MessageList extends BasePage {
         )
     }
 }
-let styles = StyleSheet.create({
-    listView:{
-        flex:1,
-        // backgroundColor:CommonStyle.color_purple,
-
-    }
-
-});

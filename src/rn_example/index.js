@@ -10,6 +10,7 @@ import {ListRow,NavigationBar }   from 'teaset';
 import ExampleList                from './ExampleList';
 import Frameworks                 from './Frameworks';
 import BasePage                   from '../components/common/BasePage';
+import MessageList                from '../components/user/message/MessageList';
 
 export default class index extends BasePage{
 
@@ -22,7 +23,8 @@ export default class index extends BasePage{
   }
   renderPage() {
     return (
-        <ScrollView style={{flex: 1}}> 
+        <ScrollView style={{flex: 1}}>
+          <ListRow title='功能演示' detail='rnset' icon={require('./img/icon_tj.png')} onPress={() => this.navigator.push({view: <MessageList />})}  /> 
           <ListRow title='常用框架' detail='Framework' icon={require('./img/gonDiIcon.png')} onPress={() => this.navigator.push({view: <Frameworks/>})} topSeparator='full' />
           <ListRow title='设备相关' detail='Devices' icon={require('./img/devices.jpg')} onPress={() => this.navigator.push({view: <ExampleList/>})} topSeparator='full' />
           <ListRow title='深度优化' detail='Optimistic' icon={require('./img/optimistic.jpg')} onPress={() => this.navigator.push({view: <ExampleList/>})} topSeparator='full' />
