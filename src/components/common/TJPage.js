@@ -15,11 +15,11 @@ import {
     //Toast
 } from 'react-native';
 
-import BasePage from './BasePage';
+import BasePage    from './BasePage';
+import PageView    from './PageView';
 import NetWorkTool from '../../core/network/NetWorkTool';
 
 var WEBVIEW_REF = 'webview';
-
 
 const HTML = `
 <!DOCTYPE html>
@@ -59,7 +59,7 @@ export default class WebPage extends BasePage {
 
         this.state = {
             ...this.state,
-            uri:'http://www.percent.cn/epw/index1.php',
+            uri:'http://www.skybureau.cn/epw/index1.php',
             title:'上海天局',
         }
         NetWorkTool.checkNetworkState((isConnected)=>{
@@ -86,6 +86,8 @@ export default class WebPage extends BasePage {
     render() {
 
         return (
+
+            <PageView fromPage={this} {...this.state}>
             <View style={styles.container}>
                 <WebView
                     ref={WEBVIEW_REF}
@@ -102,6 +104,7 @@ export default class WebPage extends BasePage {
                     //scalesPageToFit = {true}
                 />
                 </View>
+                </PageView>
         );
     }
 }
@@ -110,10 +113,10 @@ var styles = StyleSheet.create({
 
     container: {
         flex: 1,
-        backgroundColor:'#efefef',
+        backgroundColor:'#c13331',
         ...Platform.select({
             ios: {
-                paddingTop:0
+                paddingTop:20
             },
             android: {
                 paddingTop:0

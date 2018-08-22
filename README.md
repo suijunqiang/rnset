@@ -88,9 +88,9 @@ Enjoy it!<br>
     "superagent": "^3.5.2",<br>
     "teaset": "^0.2.7"<br>
 
-#IOS bundle<br>
+# IOS bundle<br>
 react-native bundle --entry-file index.js --bundle-output ./bundle/iosBundle/index.jsbundle --platform ios --assets-dest ./bundle/iosBundle/ --dev flase<br>
-#Android bundle<br>
+# Android bundle<br>
 react-native bundle --entry-file index.js --bundle-output ./bundle/androidBundle/index.jsbundle --platform android --assets-dest ./bundle/androidBundle/ --dev flase<br>
 ![image](http://www.wwmj.club:81/rnset/react_native.gif)
 

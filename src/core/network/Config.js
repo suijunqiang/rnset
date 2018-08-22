@@ -5,7 +5,7 @@ var ConfigData = {
   // environment:'production',
 //    environment:"staging",
     // environment:"dev",
-   environment:"percent",
+   environment:"skybureau",
     production:{
         environment:'production',
         domain:'http://192.168.251.12:3000/apis/3/dms',
@@ -62,12 +62,12 @@ var ConfigData = {
         codePushIOS:'',
         codePushAndroid:'',
     },
-    percent:{
-        environment:"percent",
+    skybureau:{
+        environment:"skybureau",
 
-        domain:'http://www.percent.cn/bandq/user/dms',
-        loginDomain:'http://www.percent.cn/bandq/user/service-container/apis',
-        registerUser:'http://www.percent.cn/php/mobile'
+        domain:'http://www.skybureau.cn/bandq/user/dms',
+        loginDomain:'http://www.skybureau.cn/bandq/user/service-container/apis',
+        registerUser:'http://www.skybureau.cn/php/mobile',
     },
 
 };

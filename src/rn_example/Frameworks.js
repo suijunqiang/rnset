@@ -30,7 +30,6 @@ export default class ExampleList extends BasePage{
           
           <ListRow title='TeaSet' icon={require('./img/teatset.jpg')}  detail='TeaSetUI' onPress={() => this.navigator.push({view: <TeaSet />})} topSeparator='full' />
           <ListRow title='蚂蚁金融' detail='AntMobile' onPress={() => this.navigator.push({view: <AntMobile/>})}  />
-          <ListRow title='EZSwiper' detail='EZSwiper' onPress={() => this.navigator.push({view: <EZSwiper/>})}  />
 
           </ScrollView>
     );
