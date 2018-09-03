@@ -7,7 +7,7 @@ Enjoy it!<br>
 # Demo Android APK
 [APK](http://www.wwmj.club:81/download/TJ.apk)
 # How to use
-0, It's based on the react3.5+.<br>
+0, It's based on the react3.5+, & react native 0.56(but this version has some compatible issue, we will update it soon).<br>
 1, I have verified it may run well on both of IOS/Android by XCode+WebStorm.<br>
 2, The gif belw is showing what I have done by react native.<br>
 3, Anyone who would like to join & improve this project will be welcomed.<br>
@@ -93,4 +93,5 @@ react-native bundle --entry-file index.js --bundle-output ./bundle/iosBundle/ind
 # Android bundle<br>
 react-native bundle --entry-file index.js --bundle-output ./bundle/androidBundle/index.jsbundle --platform android --assets-dest ./bundle/androidBundle/ --dev flase<br>
 ![image](http://www.wwmj.club:81/rnset/react_native.gif)
+
 
