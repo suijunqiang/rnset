@@ -15,7 +15,7 @@
     "react-native-device-info": "^0.22.3",
     "react-native-dismiss-keyboard": "^1.0.0",
     "react-native-ezswiper": "^1.2.2",
-    "react-native-scrollable-tab-view": "^0.8.0",
+    "react-native-scrollable-tab-view": "^0.10.0",
     "react-native-storage": "^0.2.2",
     "react-native-tab-navigator": "^0.3.4",
     "react-navigation": "^2.11.2",

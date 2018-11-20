@@ -37,8 +37,6 @@
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		73512590211FE54F00558747 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7351258C211FE38C00558747 /* libRNDeviceInfo.a */; };
-		73D7260C2121650A000662C6 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 73D7260A21216509000662C6 /* assets */; };
-		73D7260D2121650A000662C6 /* index.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 73D7260B21216509000662C6 /* index.jsbundle */; };
 		73D7268E212179FF000662C6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7268D212179FF000662C6 /* QuartzCore.framework */; };
 		73D7269021217A08000662C6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7268F21217A08000662C6 /* OpenGLES.framework */; };
 		73D7269221217A12000662C6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7269121217A12000662C6 /* SystemConfiguration.framework */; };
@@ -46,7 +44,6 @@
 		73D7269621217A25000662C6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7269521217A25000662C6 /* Security.framework */; };
 		73D7269821217A2F000662C6 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7269721217A2F000662C6 /* libsqlite3.0.tbd */; };
 		73D7269A21217A3D000662C6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7269921217A3D000662C6 /* CoreTelephony.framework */; };
-		73D7269C21217A4B000662C6 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7269B21217A4B000662C6 /* libstdc++.6.0.9.tbd */; };
 		73D726D82121804B000662C6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7268B212179F4000662C6 /* CoreLocation.framework */; };
 		73EABBB0211FFDA70074BC2D /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7351258C211FE38C00558747 /* libRNDeviceInfo.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
@@ -367,8 +364,6 @@
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		73512586211FE38C00558747 /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNDeviceInfo.xcodeproj; path = "../node_modules/react-native-device-info/ios/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; };
-		73D7260A21216509000662C6 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../bundle/iosBundle/assets; sourceTree = "<group>"; };
-		73D7260B21216509000662C6 /* index.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = index.jsbundle; path = ../bundle/iosBundle/index.jsbundle; sourceTree = "<group>"; };
 		73D7267D212179DD000662C6 /* BaiduMapAPI_Radar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Radar.framework; path = "../node_modules/react-native-baidu-map/ios/lib/BaiduMapAPI_Radar.framework"; sourceTree = "<group>"; };
 		73D7267E212179DD000662C6 /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Utils.framework; path = "../node_modules/react-native-baidu-map/ios/lib/BaiduMapAPI_Utils.framework"; sourceTree = "<group>"; };
 		73D7267F212179DD000662C6 /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Search.framework; path = "../node_modules/react-native-baidu-map/ios/lib/BaiduMapAPI_Search.framework"; sourceTree = "<group>"; };
@@ -406,7 +401,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				73D726D82121804B000662C6 /* CoreLocation.framework in Frameworks */,
-				73D7269C21217A4B000662C6 /* libstdc++.6.0.9.tbd in Frameworks */,
 				73D7269A21217A3D000662C6 /* CoreTelephony.framework in Frameworks */,
 				73D7269821217A2F000662C6 /* libsqlite3.0.tbd in Frameworks */,
 				73D7269621217A25000662C6 /* Security.framework in Frameworks */,
@@ -539,8 +533,6 @@
 		13B07FAE1A68108700A75B9A /* rnset */ = {
 			isa = PBXGroup;
 			children = (
-				73D7260A21216509000662C6 /* assets */,
-				73D7260B21216509000662C6 /* index.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -1163,10 +1155,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73D7260C2121650A000662C6 /* assets in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				73D7260D2121650A000662C6 /* index.jsbundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
