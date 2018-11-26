@@ -5,7 +5,7 @@ Generally rnset able to streamline your new project work 50% and more reliable/f
 Enjoy it!<br>
 
 # Demo Android APK
-[APK](http://www.wwmj.club:81/download/TJ.apk)
+[APK](http://www.skybureau.cn/dl/TJ.apk)
 # How to use
 0, It's based on the react3.5+, & react native 0.56(but this version has some compatible issue, we will update it soon).<br>
 1, I have verified it may run well on both of IOS/Android by XCode+WebStorm.<br>
