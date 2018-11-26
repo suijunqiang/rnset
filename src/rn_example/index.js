@@ -11,6 +11,9 @@ import ExampleList                from './ExampleList';
 import Frameworks                 from './Frameworks';
 import BasePage                   from '../components/common/BasePage';
 import MessageList                from '../components/user/message/MessageList';
+import H5Game                     from './web/H5Game';
+import H5GameLocal                from './web/H5GameLocal';
+import MultiMedia                 from './multmedia/index';
 
 export default class index extends BasePage{
 
@@ -29,7 +32,9 @@ export default class index extends BasePage{
           <ListRow title='设备相关' detail='Devices' icon={require('./img/devices.jpg')} onPress={() => this.navigator.push({view: <ExampleList/>})} topSeparator='full' />
           <ListRow title='深度优化' detail='Optimistic' icon={require('./img/optimistic.jpg')} onPress={() => this.navigator.push({view: <ExampleList/>})} topSeparator='full' />
           <ListRow title='特效相关' detail='Especial' icon={require('./img/special.jpg')} onPress={() => this.navigator.push({view: <ExampleList/>})} topSeparator='full' />
-          <ListRow title='游戏相关' detail='Games' icon={require('./img/games.jpg')} onPress={() => this.navigator.push({view: <ExampleList/>})} topSeparator='full' />
+          <ListRow title='多媒体' detail='MultiMedia' icon={require('./img/video.png')} onPress={() => this.navigator.push({view: <MultiMedia/>})} topSeparator='full' />
+          <ListRow title='H5游戏在线' detail='Filter' icon={require('./img/games.jpg')} onPress={() => this.navigator.push({view: <H5Game/>})} topSeparator='full' />
+          <ListRow title='H5游戏本地' detail='Filter' icon={require('./img/games.jpg')} onPress={() => this.navigator.push({view: <H5GameLocal/>})} topSeparator='full' />
         </ScrollView>
     );
   }

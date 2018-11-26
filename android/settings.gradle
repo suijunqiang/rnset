@@ -1,4 +1,10 @@
 rootProject.name = 'rnset'
+include ':react-native-camera'
+project(':react-native-camera').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-camera/android')
+include ':@terrylinla_react-native-sketch-canvas'
+project(':@terrylinla_react-native-sketch-canvas').projectDir = new File(rootProject.projectDir, '../node_modules/@terrylinla/react-native-sketch-canvas/android')
+include ':react-native-color-matrix-image-filters'
+project(':react-native-color-matrix-image-filters').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-color-matrix-image-filters/android')
 include ':react-native-device-info'
 project(':react-native-device-info').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-device-info/android')
 

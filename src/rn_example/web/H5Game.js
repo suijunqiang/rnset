@@ -15,8 +15,8 @@ import {
     //Toast
 } from 'react-native';
 
-import BasePage    from './BasePage';
-import PageView    from './PageView';
+import BasePage    from '../../components/common/BasePage';
+import PageView    from '../../components/common/PageView';
 import NetWorkTool from '../../core/network/NetWorkTool';
 
 var WEBVIEW_REF = 'webview';
@@ -49,7 +49,7 @@ const HTML = `
 </html>
 `;
 
-export default class WebPage extends BasePage {
+export default class H5Game extends BasePage {
     handleMethod(isConnected){
         console.log('test', (isConnected ? 'online' : 'offline'));
     }
@@ -59,7 +59,7 @@ export default class WebPage extends BasePage {
 
         this.state = {
             ...this.state,
-            uri:'http://www.skybureau.cn/epw/index1.php',
+            uri:'http://www.skybureau.cn/game/h5',
             title:'上海天局',
         }
         NetWorkTool.checkNetworkState((isConnected)=>{
