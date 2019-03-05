@@ -14,6 +14,8 @@ import MessageList                from '../components/user/message/MessageList';
 import H5Game                     from './web/H5Game';
 import H5GameLocal                from './web/H5GameLocal';
 import MultiMedia                 from './multmedia/index';
+import WebDemos                   from './web/webDemos';
+import MqttRN                     from './mqtt/chat/index';``
 
 export default class index extends BasePage{
 
@@ -35,6 +37,8 @@ export default class index extends BasePage{
           <ListRow title='多媒体' detail='MultiMedia' icon={require('./img/video.png')} onPress={() => this.navigator.push({view: <MultiMedia/>})} topSeparator='full' />
           <ListRow title='H5游戏在线' detail='Filter' icon={require('./img/games.jpg')} onPress={() => this.navigator.push({view: <H5Game/>})} topSeparator='full' />
           <ListRow title='H5游戏本地' detail='Filter' icon={require('./img/games.jpg')} onPress={() => this.navigator.push({view: <H5GameLocal/>})} topSeparator='full' />
+          <ListRow title='Web Demo' detail='Filter' icon={require('./img/games.jpg')} onPress={() => this.navigator.push({view: <WebDemos/>})} topSeparator='full' />
+          <ListRow title='MQTTChat' detail='mqtt' icon={require('./img/games.jpg')} onPress={() => this.navigator.push({view: <MqttRN/>})} topSeparator='full' />
         </ScrollView>
     );
   }

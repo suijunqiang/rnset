@@ -4,6 +4,8 @@ import android.app.Application;
 
 import com.facebook.react.BuildConfig;
 import com.facebook.react.ReactApplication;
+import com.tuanpm.RCTMqtt.RCTMqttPackage;
+import org.reactnative.camera.RNCameraPackage;
 import org.reactnative.camera.RNCameraPackage;
 import com.terrylinla.rnsketchcanvas.SketchCanvasPackage;
 import iyegoroff.RNColorMatrixImageFilters.RNColorMatrixImageFiltersPackage;
@@ -28,6 +30,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RCTMqttPackage(),
+            new RNCameraPackage(),
             new RNCameraPackage(),
             new SketchCanvasPackage(),
             new RNColorMatrixImageFiltersPackage(),

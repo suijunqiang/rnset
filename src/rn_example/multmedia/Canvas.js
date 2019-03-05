@@ -20,8 +20,20 @@ import { RNCamera } from 'react-native-camera';
 import RNSketchCanvas from '@terrylinla/react-native-sketch-canvas';
 import { SketchCanvas } from '@terrylinla/react-native-sketch-canvas';
 
-export default class example extends Component {
-  constructor(props) {
+import BasePage         from '../../components/common/BasePage';
+import {Theme, NavigationPage, ListRow, NavigationBar, Label} from 'teaset';
+
+export default class example extends BasePage {
+
+  renderNavigationBar() {
+    return (
+        <NavigationBar
+            title={"Canvas"} leftView={ <NavigationBar.BackButton  onPress={() => this.navigator.pop()} />}
+        />
+    );
+  }
+
+    constructor(props) {
     super(props)
 
     this.state = {
@@ -44,7 +56,7 @@ export default class example extends Component {
     }
   };
 
-  render() {
+  renderPage() {
     return (
       <View style={styles.container}>
         {

@@ -36,11 +36,9 @@
 		2DCD954D1E0B4F2C00145EB5 /* rnsetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* rnsetTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2EC801A8B6CF4C2A95E8F483 /* libRNSketchCanvas.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E0215F70464E14A86A3728 /* libRNSketchCanvas.a */; };
-		3E8EA041E50D424CB562382B /* libRNCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA165575D6C4B21A674F073 /* libRNCamera.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
-		7333AF7821AB8FD500AF305E /* index.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 7333AF7621AB8FD500AF305E /* index.jsbundle */; };
-		7333AF7921AB8FD500AF305E /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 7333AF7721AB8FD500AF305E /* assets */; };
 		73512590211FE54F00558747 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7351258C211FE38C00558747 /* libRNDeviceInfo.a */; };
+		739F8D8A22181E7E0089FC9E /* libRNCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7333AF6921AB887900AF305E /* libRNCamera.a */; };
 		73D7268E212179FF000662C6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7268D212179FF000662C6 /* QuartzCore.framework */; };
 		73D7269021217A08000662C6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7268F21217A08000662C6 /* OpenGLES.framework */; };
 		73D7269221217A12000662C6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7269121217A12000662C6 /* SystemConfiguration.framework */; };
@@ -49,6 +47,8 @@
 		73D7269821217A2F000662C6 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7269721217A2F000662C6 /* libsqlite3.0.tbd */; };
 		73D7269A21217A3D000662C6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7269921217A3D000662C6 /* CoreTelephony.framework */; };
 		73D726D82121804B000662C6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7268B212179F4000662C6 /* CoreLocation.framework */; };
+		73D98E172215843E00ED3777 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 73D98DEB2215843E00ED3777 /* assets */; };
+		73D98E182215843E00ED3777 /* index.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 73D98E162215843E00ED3777 /* index.jsbundle */; };
 		73EABBB0211FFDA70074BC2D /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7351258C211FE38C00558747 /* libRNDeviceInfo.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		A6C31EA1ADFE48B4AFC245E6 /* libRNColorMatrixImageFilters.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAA81FD65B04336BD4ABAF1 /* libRNColorMatrixImageFilters.a */; };
@@ -390,8 +390,7 @@
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		41F7F8DDA0CC4786A4F4CAF1 /* RNSketchCanvas.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSketchCanvas.xcodeproj; path = "../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/RNSketchCanvas.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
-		7333AF7621AB8FD500AF305E /* index.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = index.jsbundle; path = ../bundle/iosBundle/index.jsbundle; sourceTree = "<group>"; };
-		7333AF7721AB8FD500AF305E /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../bundle/iosBundle/assets; sourceTree = "<group>"; };
+		7179353D3CA74FE793B552A1 /* libRCTMqtt.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTMqtt.a; sourceTree = "<group>"; };
 		73512586211FE38C00558747 /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNDeviceInfo.xcodeproj; path = "../node_modules/react-native-device-info/ios/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; };
 		73D7267D212179DD000662C6 /* BaiduMapAPI_Radar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Radar.framework; path = "../node_modules/react-native-baidu-map/ios/lib/BaiduMapAPI_Radar.framework"; sourceTree = "<group>"; };
 		73D7267E212179DD000662C6 /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Utils.framework; path = "../node_modules/react-native-baidu-map/ios/lib/BaiduMapAPI_Utils.framework"; sourceTree = "<group>"; };
@@ -409,6 +408,8 @@
 		73D7269721217A2F000662C6 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		73D7269921217A3D000662C6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		73D7269B21217A4B000662C6 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		73D98DEB2215843E00ED3777 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../bundle/iosBundle/assets; sourceTree = "<group>"; };
+		73D98E162215843E00ED3777 /* index.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = index.jsbundle; path = ../bundle/iosBundle/index.jsbundle; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8FAA81FD65B04336BD4ABAF1 /* libRNColorMatrixImageFilters.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNColorMatrixImageFilters.a; sourceTree = "<group>"; };
@@ -434,6 +435,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739F8D8A22181E7E0089FC9E /* libRNCamera.a in Frameworks */,
 				73D726D82121804B000662C6 /* CoreLocation.framework in Frameworks */,
 				73D7269A21217A3D000662C6 /* CoreTelephony.framework in Frameworks */,
 				73D7269821217A2F000662C6 /* libsqlite3.0.tbd in Frameworks */,
@@ -458,7 +460,6 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				A6C31EA1ADFE48B4AFC245E6 /* libRNColorMatrixImageFilters.a in Frameworks */,
 				2EC801A8B6CF4C2A95E8F483 /* libRNSketchCanvas.a in Frameworks */,
-				3E8EA041E50D424CB562382B /* libRNCamera.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,8 +571,8 @@
 		13B07FAE1A68108700A75B9A /* rnset */ = {
 			isa = PBXGroup;
 			children = (
-				7333AF7721AB8FD500AF305E /* assets */,
-				7333AF7621AB8FD500AF305E /* index.jsbundle */,
+				73D98DEB2215843E00ED3777 /* assets */,
+				73D98E162215843E00ED3777 /* index.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -678,6 +679,7 @@
 				8FAA81FD65B04336BD4ABAF1 /* libRNColorMatrixImageFilters.a */,
 				D0E0215F70464E14A86A3728 /* libRNSketchCanvas.a */,
 				EDA165575D6C4B21A674F073 /* libRNCamera.a */,
+				7179353D3CA74FE793B552A1 /* libRCTMqtt.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -1257,10 +1259,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7333AF7821AB8FD500AF305E /* index.jsbundle in Resources */,
-				7333AF7921AB8FD500AF305E /* assets in Resources */,
+				73D98E172215843E00ED3777 /* assets in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				73D98E182215843E00ED3777 /* index.jsbundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1391,12 +1393,14 @@
 					"$(SRCROOT)/../node_modules/react-native-color-matrix-image-filters/ios/**",
 					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-mqtt/ios/RCTMqtt/**",
 				);
 				INFOPLIST_FILE = rnsetTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1423,12 +1427,14 @@
 					"$(SRCROOT)/../node_modules/react-native-color-matrix-image-filters/ios/**",
 					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-mqtt/ios/RCTMqtt/**",
 				);
 				INFOPLIST_FILE = rnsetTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1456,6 +1462,7 @@
 					"$(SRCROOT)/../node_modules/react-native-color-matrix-image-filters/ios/**",
 					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-mqtt/ios/RCTMqtt/**",
 				);
 				INFOPLIST_FILE = rnset/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1483,6 +1490,7 @@
 					"$(SRCROOT)/../node_modules/react-native-color-matrix-image-filters/ios/**",
 					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-mqtt/ios/RCTMqtt/**",
 				);
 				INFOPLIST_FILE = rnset/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1515,11 +1523,13 @@
 					"$(SRCROOT)/../node_modules/react-native-color-matrix-image-filters/ios/**",
 					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-mqtt/ios/RCTMqtt/**",
 				);
 				INFOPLIST_FILE = "rnset-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1554,11 +1564,13 @@
 					"$(SRCROOT)/../node_modules/react-native-color-matrix-image-filters/ios/**",
 					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-mqtt/ios/RCTMqtt/**",
 				);
 				INFOPLIST_FILE = "rnset-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1592,11 +1604,13 @@
 					"$(SRCROOT)/../node_modules/react-native-color-matrix-image-filters/ios/**",
 					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-mqtt/ios/RCTMqtt/**",
 				);
 				INFOPLIST_FILE = "rnset-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1630,11 +1644,13 @@
 					"$(SRCROOT)/../node_modules/react-native-color-matrix-image-filters/ios/**",
 					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-mqtt/ios/RCTMqtt/**",
 				);
 				INFOPLIST_FILE = "rnset-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
