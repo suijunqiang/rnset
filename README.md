@@ -94,6 +94,6 @@ react-native bundle --entry-file index.js --bundle-output ./bundle/iosBundle/ind
 react-native bundle --entry-file index.js --bundle-output ./bundle/androidBundle/index.jsbundle --platform android --assets-dest ./bundle/androidBundle/ --dev flase<br>
 react-native bundle --platform android --dev false --entry-file index.js  --bundle-output android/app/src/main/assets/index.android.bundle  --assets-dest android/app/src/main/res<br>
 
-![image](https://github.com/suijunqiang/rnset/blob/master/react_native.gif)
+![image](https://github.com/suijunqiang/rnset/react_native.gif)
 
 
